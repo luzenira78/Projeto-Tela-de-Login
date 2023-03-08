@@ -10,6 +10,60 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <h1> Login</h1>
+    <div class="container col-11 col-md-9" id="form-container">
+        <div class="row gx-5">
+            <div class="col-md-6">
+                <h2>Realize seu cadastro</h2>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name"
+                        placeholder="Digite seu nome">
+                        <label for="name" class="form-label">Digite seu nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email"
+                        placeholder="Digite seu e-mail">
+                        <label for="email" class="form-label">Cadastre um e-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="password"
+                        placeholder="Crie uma senha forte">
+                        <label for="password" class="form-label">Crie uma senha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmpassword" 
+                        name="confirmpassword"
+                        placeholder="Crie uma senha forte">
+                        <label for="confirmpassword" class="form-label">Confirme sua senha</label>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="agree-form"
+                            name="agree-form">
+                            <label for="agree-form" class="form-check-label">
+                                você aceita os <a href="#">termos de serviços</a>?
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" checked id="newaletter" 
+                            name="newaletter"> <!-- O checked deixa a caixinha do checkbox ja clicado-->
+                            <label for="newaletter" class="form-check-label">
+                               Deseja receber nossas newaletter?
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-success" type="submit">Cadastrar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+            <div class="row align-items-center">
+            <div class="col-12">
+               <img src="./img/undraw_progressive_app_m-9-ms.svg" alt="Tela de Registro" class="img-fluid">
+            </div>
+            <div class="col-12" id="link-container">
+                <a href="index.html">Já sou cadastrado</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -12,6 +12,15 @@ body{
     padding: 75px;  /*era 25px, eu alterei*/
 }
 
+/* @media - deixando a tela maior em desktop */
+@media(min-width: 768px){
+    #form-container{
+    margin: 50px auto;
+    padding: 50px;
+
+  }   
+}
+
 #form-container h2{
     font-weight: 900;
     margin-bottom: 30px;
@@ -61,13 +70,26 @@ body{
 }
 
 /* #form-container input [type="submit"]{
+/* #form-container input [type="checkbox"]cheked{
     background-color: #00BFA6; 
     border-color: #00BFA6; 
 } */
 
+
 .btn{
     background-color: #00BFA6;
     border-color: #00BFA6; 
+}
+
+.btn.btn-success{
+    width: 100%;  /*Deixa o botão ocupando toda a tela (no mobile);*/
+    margin-top: 25px; /*Descolar o botao do campo ácima*/
+}
+
+@media(min-width: 768px){
+    .btn.btn-success{
+        width: auto;  /*ácima de 768x, o botao fica pequeno*/
+    }
 }
 
 /* IMAGEM */
@@ -77,6 +99,16 @@ body{
     height: 100%;
     padding: 75px 0;
 }
+
+.col-md-6.order-md-1{
+    padding-top: 50px; /*afasta a img do botao*/
+}
+
+/* @media(min-width: 768px){
+    .col-md-6.order-md-1{
+        padding-top: 0;
+    }
+} */
 
 /* Link register */
 #link-container{
